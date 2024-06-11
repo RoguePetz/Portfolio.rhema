@@ -1,7 +1,5 @@
 import React from 'react';
-import game from "./assets/images/game-controller.png"
-import web from "./assets/images/web.png"
-import ai from "./assets/images/ai.png"
+
 import avatar from "./assets/images/avatar.png"
 import Button from 'react-bootstrap/Button';
 
