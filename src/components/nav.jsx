@@ -20,7 +20,7 @@ function Nav() {
             <Button variant="light" onClick={handleShow}>
                 Menu
             </Button>
-            <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas  show={show} onHide={handleClose}>
                 <Offcanvas.Header  variant="light" closeButton>
                 <Offcanvas.Title className='text-white'>Menu</Offcanvas.Title>
                 </Offcanvas.Header>
