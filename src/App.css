@@ -1,0 +1,11 @@
+.cont{
+    width: 750px;
+    height: 300px;
+}
+
+@media (max-width: 500px){
+    .cont{
+        width: 300px;
+        overflow-y: scroll;
+    }
+}

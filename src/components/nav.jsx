@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+
 function Nav() {
 
     const [show, setShow] = useState(false);
@@ -20,13 +21,12 @@ function Nav() {
             <Button variant="light" onClick={handleShow}>
                 Menu
             </Button>
-            <Offcanvas  show={show} onHide={handleClose}>
+            <Offcanvas className='' show={show} onHide={handleClose}>
                 <Offcanvas.Header  variant="light" closeButton>
                 <Offcanvas.Title className='text-white'>Menu</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body className='text-white'>
-                Some text as placeholder. In real life you can have the elements you
-                have chosen. Like, text, images, lists, etc.
+                coming soon
                 </Offcanvas.Body>
             </Offcanvas>
             </div>
