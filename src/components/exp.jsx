@@ -60,7 +60,8 @@ function Exp() {
 
 
     return (
-      <div className='bg-black  text-white text-xl flex flex-col items-center mt-40 gap-12'>
+      <div className='bg-black  text-white text-xl flex flex-col items-center mt-20 gap-12'>
+            <p className=' text-xl'>Expirience</p>
             <div className=' flex gap-1'>
             <Button onClick={handleClick}  size="lg" variant="outline-light">Netheart</Button>
             <Button onClick={handleClick2} size="lg" variant="outline-light">Swiphr</Button>

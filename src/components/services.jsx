@@ -7,7 +7,7 @@ import ai from "./assets/images/ai.png"
 function Services() {
     return (
       <div className='flex flex-col mt-24 text-white justify-center h-56 bg-neutral-800 items-center w-full'>
-        <p className=' text-2xl  bg-neutral-800'>Services</p>
+        <p className=' text-xl  bg-neutral-800'>Services</p>
         <div className=' bg-neutral-800 flex gap-12'>
             <div className=' bg-neutral-800 flex flex-col items-center  rounded-xl'>
               <img className=' bg-neutral-800' src={game} width={60}/>
