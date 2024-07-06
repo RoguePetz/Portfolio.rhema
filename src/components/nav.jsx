@@ -1,38 +1,31 @@
 import React from 'react';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
-function Nav() {
+function NNav() {
 
-    const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     return (
-      <div className=" h-16 content-center bg-black">
-        <div className=" flex justify-between content-center px-10 bg-black">
-            <div className=' content-center text-white text-lg bg-black'>
-                Portfolio
-            </div>
-            <div>
-            <Button variant="light" onClick={handleShow}>
-                Menu
-            </Button>
-            <Offcanvas className='' show={show} onHide={handleClose}>
-                <Offcanvas.Header  variant="light" closeButton>
-                <Offcanvas.Title className='text-white'>Menu</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body className='text-white'>
-                coming soon
-                </Offcanvas.Body>
-            </Offcanvas>
-            </div>
-        </div>
-      </div>
+      <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">About</Nav.Link>
+            <Nav.Link href="#link">Contact</Nav.Link>
+            
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     );
   }
   
-  export default Nav;
+  export default NNav;
