@@ -1,6 +1,7 @@
 import React from 'react';
 import NNav from '../components/nav';
 import Hero from '../components/hero';
+import Footer from '../components/Footer';
 
 
 function Main() {
@@ -9,7 +10,10 @@ function Main() {
         <NNav/>
         <div className=' px-20'>
           <Hero/>
+          
         </div>
+          
+        <Footer/>
       </div>
     );
   }
