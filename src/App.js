@@ -1,9 +1,10 @@
 import './App.css';
 import Main from './pages/mian';
 
+
 function App() {
   return (
-    <div >
+    <div className=''>
         <Main/>
     </div>
   );

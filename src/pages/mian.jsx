@@ -1,19 +1,22 @@
 import React from 'react';
 import NNav from '../components/nav';
 import Hero from '../components/hero';
-import Footer from '../components/Footer';
+import Cards from '../components/Cards';
 
 
 function Main() {
     return (
-      <div>
+      <div className=''>
         <NNav/>
-        <div className=' px-20'>
-          <Hero/>
-          
+        <div className='Ccol flex px-[30px]' >
+          <div className='Cwid w-[50%]'>
+            <Hero/>
+          </div>
+          <div className='Cwid py-4 flex w-[50%]'>
+            <Cards/>
+          </div>
         </div>
-          
-        <Footer/>
+        
       </div>
     );
   }
