@@ -7,7 +7,6 @@ import Cards from '../components/Cards';
 function Main() {
     return (
       <div className=''>
-        <NNav/>
         <div className='Ccol flex px-[30px]' >
           <div className='Cwid w-[50%]'>
             <Hero/>
