@@ -9,7 +9,6 @@ function Hero() {
            <div className='flex flex-col justify-center text-center'>
              <h2 className='leading-2 text-gray-400'>Hello i'm Rhema</h2>
              <p className=''><TextChanger/></p>
-             <p>Welcome to my portfolio feel free to look around</p>
              <Button  variant="outline-dark">Hire</Button>
            </div> 
       </div>
