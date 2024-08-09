@@ -17,7 +17,7 @@ const TextChanger = () => {
   }, []);
 
   return (
-      <h3 className='leading-3 text-sky-500'>{text}</h3>
+      <h3 className=' font-bold'>{text}</h3>
   );
 };
 

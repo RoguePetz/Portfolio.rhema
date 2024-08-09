@@ -4,14 +4,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 function NNav() {
     return (
-      <Navbar expand="lg" className=" border-b-[1.5px]">
+      <Navbar expand="lg" className="">
       <Container className='flex '>
-        <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand href="#home" className=''>Portfolio</Navbar.Brand>
+        <Navbar.Toggle className='' aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/" className=''>Home</Nav.Link>
+            <Nav.Link href="/contact"  className=''>Projects</Nav.Link>
+            <Nav.Link href="/contact"  className=''>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
