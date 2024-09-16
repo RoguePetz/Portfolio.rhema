@@ -8,7 +8,6 @@ import Cont from './pages/cont';
 function App() {
   return (
 <Router>
-<NNav/>
   <Routes>
     <Route path="/" element={<Main />} />
     <Route path="/contact" element={<Cont/>} />
