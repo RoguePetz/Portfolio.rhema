@@ -1,9 +1,6 @@
 import React from 'react';
-import nameimg from './assets/images/Group (1).png'
-import TextChanger from './textChanger';
 import vid from './assets/images/lv_0_20240916050944.mp4'
 import MatrixText from './matrix';
-import MatrixGlitchText from './glitch';
 import MatrixTextChanger from './MatrixTextChanger';
 function Hero() {
   const texts = [
@@ -17,13 +14,14 @@ function Hero() {
 
     return (
       <div className=' hcont flex w-full h-[70vh] justify-center items-center gap-5'>
-          <div className=' relative w-[300px] h-[40vh] overflow-hidden border-x-2 border-double border-black rounded-md'>
+          <div className='vidimg relative w-[300px] h-[40vh] overflow-hidden border-x-2 border-double border-black rounded-md'>
             <video 
               src={vid} 
               autoPlay 
               loop 
               muted 
               playsInline 
+              alt='profile video'
               className=' absolute inset-0 w-full h-full object-cover'
           >
               Your browser does not support the video tag.

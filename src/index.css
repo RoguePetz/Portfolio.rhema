@@ -29,9 +29,7 @@ code {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #00ff00;
-  padding: 10px 20px;
-  position: relative;
-  overflow: hidden;
+  padding:5px;
   transition: color 1s;
   border-radius: 5px;
 }
@@ -46,7 +44,7 @@ code {
   border: solid thin #00ff00;
   border-radius: 5px;
   padding: 5px;
-  width: 150px;
+  width: 100px;
   text-align: center;
 }
 
@@ -94,5 +92,19 @@ white-space: pre;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .vidimg{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+  .matrix-glitch-text{
+    font-size: 20px;
+  }
+  .logo{
+    font-size: 15px;
+  }
+  .button{
+    font-size: 15px;
   }
 }
