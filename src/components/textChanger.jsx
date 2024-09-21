@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const TextChanger = () => {
-  const [text, setText] = useState('Hello, World!');
-  const texts = ['Software Engineer', 'Game Developer', 'Web Developer'];
+  const [text, setText] = useState('Rhema Briggs');
+  const texts = ['Software Engineer', 'Game Developer', 'Web Developer','Rhema Briggs'];
   const interval = 3000; // Change text every 3 seconds
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const TextChanger = () => {
   }, []);
 
   return (
-      <h3 className=' font-bold'>{text}</h3>
+      <h3 className=' font-bold text-[#00ff00]'>{text}</h3>
   );
 };
 

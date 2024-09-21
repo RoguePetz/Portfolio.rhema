@@ -2,10 +2,22 @@ import React from 'react';
 import nameimg from './assets/images/Group (1).png'
 import TextChanger from './textChanger';
 import vid from './assets/images/lv_0_20240916050944.mp4'
+import MatrixText from './matrix';
+import MatrixGlitchText from './glitch';
+import MatrixTextChanger from './MatrixTextChanger';
 function Hero() {
+  const texts = [
+    'Welcome to the Matrix',
+    'Follow the white rabbit',
+    'The Matrix has you',
+    'Wake up, Neo...',
+    'You take the red pill'
+  ];
+  const texts2 = ['Rhema Briggs','A Software Engineer', 'A Game Developer', 'A Web Developer'];
+
     return (
-      <div className=' flex flex-col w-full h-[60vh] justify-center items-center'>
-          <div className=' relative w-64 h-64 overflow-hidden border-x-2 border-double border-black rounded-full'>
+      <div className=' flex w-full h-[70vh] justify-center items-center gap-5'>
+          <div className=' relative w-[20%] h-[40vh] overflow-hidden border-x-2 border-double border-black rounded-md'>
             <video 
               src={vid} 
               autoPlay 
@@ -16,9 +28,23 @@ function Hero() {
           >
               Your browser does not support the video tag.
             </video>
-            
           </div>
-          <img src={nameimg} className=' absolute top-[50%] w-[500px]'/>
+          <div className=' w-[30%]'>
+            <MatrixText text="Hi i'm" intervalSpeed={50} />
+            <MatrixTextChanger
+                texts={texts2}
+                glitchChance={0.05}
+                intervalSpeed={50}
+                changeTextInterval={5000} // Change text every 5 seconds
+              />
+            <MatrixTextChanger
+                texts={texts}
+                glitchChance={0.01}
+                intervalSpeed={100}
+                changeTextInterval={5000} // Change text every 5 seconds
+              />
+            <div className="button2">Resume</div>
+          </div>
       </div>
     );
   }
