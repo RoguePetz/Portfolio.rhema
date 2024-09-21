@@ -16,8 +16,8 @@ function Hero() {
   const texts2 = ['Rhema Briggs','A Software Engineer', 'A Game Developer', 'A Web Developer'];
 
     return (
-      <div className=' flex w-full h-[70vh] justify-center items-center gap-5'>
-          <div className=' relative w-[20%] h-[40vh] overflow-hidden border-x-2 border-double border-black rounded-md'>
+      <div className=' hcont flex w-full h-[70vh] justify-center items-center gap-5'>
+          <div className=' relative w-[300px] h-[40vh] overflow-hidden border-x-2 border-double border-black rounded-md'>
             <video 
               src={vid} 
               autoPlay 
@@ -29,7 +29,7 @@ function Hero() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className=' w-[30%]'>
+          <div className=' htxt w-[30%]'>
             <MatrixText text="Hi i'm" intervalSpeed={50} />
             <MatrixTextChanger
                 texts={texts2}
