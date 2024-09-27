@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './FadeInSection.css'; // Create a CSS file for the animation
 
 function FadeInSection({ children }) {
   const [isVisible, setIsVisible] = useState(false);

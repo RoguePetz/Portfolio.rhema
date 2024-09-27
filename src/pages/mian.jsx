@@ -1,17 +1,14 @@
 import React from 'react';
 import NNav from '../components/nav';
 import Hero from '../components/hero';
-import gith from '../components/assets/images/github.png'
+import FadeInSection from '../components/fadein';
+import TerminalTyping from '../components/TerminalTyping';
 
 
 function Main() {
     return (
       <div className=''>  
             <NNav/>
-            <div className='fixed flex flex-col-reverse top-[70%] justify-center items-center'>
-              <div className='w-[2px] h-[90px] bg-black'></div>
-              <img className=' w-[40px]' src={gith}/>
-            </div>
             <section class="wrapper">
                 <div id="stars"></div>
                 <div id="stars2"></div>
@@ -20,8 +17,17 @@ function Main() {
                <div  className=''>
                   <Hero/>
                </div> 
-             
-            
+               <div className=' pt-10'>
+                    <div id='about'><TerminalTyping fullText="aAbout" typingSpeed={50} repeat={true} delayBeforeRepeat={3000} /></div>
+
+                    <div className=' flex justify-center items-center'>
+                      <p className='fnt mx-4 text-[#00ff00] text-[] w-[550px]'>
+                        As a Software Engineer, I specialize in developing scalable and efficient solutions that enhance business operations through cutting-edge technology. My focus lies in leveraging robust development frameworks, clean code practices, and modern software architectures to create reliable, maintainable, and innovative applications
+                      </p>
+                    </div>
+               </div>
+
+              
       </div>
     );
   }

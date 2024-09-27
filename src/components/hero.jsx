@@ -2,6 +2,7 @@ import React from 'react';
 import vid from './assets/images/pf.gif'
 import MatrixText from './matrix';
 import MatrixTextChanger from './MatrixTextChanger';
+import FadeInSection from './fadein';
 function Hero() {
   const texts = [
     'Welcome to the Matrix',

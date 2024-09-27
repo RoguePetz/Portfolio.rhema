@@ -5,7 +5,7 @@ function NNav() {
         <div className=' logo text-lg text-[#00ff00] content-center'>Rogue-Dev</div>
         <div className='flex'>
           <div className="button">Home</div>
-          <div className="button">About</div>
+          <a className=' linkstyle' href='#about'><div className="button">About</div></a>
           <div className="button">Project</div>
         </div>
       </div>
